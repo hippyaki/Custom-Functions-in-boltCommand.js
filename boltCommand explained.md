@@ -82,11 +82,11 @@
 
 ## analogMultiWrite(pins,val)
 
-pins: It is the Bolt GPIO you want to control. It can take multiple no. of following values followed by comma (,)
-val: It is the analog output voltage to be provided on the GPIO. It can take value between 0-255 (PWM).
-Syntax - `analogMultiWrite('0,1,2','50,139,240')`
+**pins**: It is the Bolt GPIO you want to control. It can take multiple no. of following values followed by comma (,)
+**val**: It is the analog output voltage to be provided on the GPIO. It can take value between 0-255 (PWM).
+**Syntax** - `analogMultiWrite('0,1,2','50,139,240')`
 
-Sample - 
+**Sample** - 
 ```
  <button onclick="analogMultiWrite('0,1,2','50,139,240');" > ON </button>
 ```
