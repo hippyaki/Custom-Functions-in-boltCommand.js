@@ -91,6 +91,7 @@ Sample -
  <button onclick="analogMultiWrite('0,1,2','50,139,240');" > ON </button>
 ```
 
+<br>
 
 # UART Commands
 
@@ -147,6 +148,7 @@ Sample -
 <div id = 'myLight'> </div>
 ```
 
+<br>
 
 # Cloud Pro(only)
 
@@ -176,7 +178,7 @@ Sample -
 <br>
 <div id = 'myLight'> </div>
 ```
-
+<br>
 
 # Utilities
 
