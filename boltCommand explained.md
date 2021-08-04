@@ -2,7 +2,7 @@
 
 ## digitalWrite(pin,val)
 
-**pin:** It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4.
+**pin:** It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4. <br>
 **val:** It is the output voltage to be provided on the GPIO. It can take value HIGH(3.3V) or LOW(0V).
 
 **Syntax** - `digitalWrite(0,HIGH)`
@@ -14,8 +14,8 @@
 
 ## digitalRead(pin,element_id)
 
-**pin**: It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4.
-**element_id**: It is the ID parameter predefined in the function. We get a return in the ID in the form of innerHTML as **"Pin Val = 'value of pin' "**
+**pin**: It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4.<br>
+**element_id**: It is the ID parameter predefined in the function. We get a return in the ID in the form of innerHTML as **"Pin Val = 'value of pin' "** <br>
 **value** = HIGH/LOW
 
 **Syntax** - `digitalRead(0,'myLight')`
@@ -29,7 +29,7 @@
 
 ## analogWrite(pin,val)
 
-**pin**: It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4.
+**pin**: It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4. <br>
 **val**: It is the analog output voltage to be provided on the GPIO. It can take value between 0-255 (PWM).
 
 **Syntax** - `analoglWrite(0,150)`
@@ -39,7 +39,7 @@
 
 ## analogRead(pin,element_id)
 
-**pin**: It is the Bolt GPIO you want to control. It can take value A0.
+**pin**: It is the Bolt GPIO you want to control. It can take value A0. <br>
 **element_id**: It is the ID parameter that returns in the form of innerHTML as **"Pin Val = 'value of pin' "**
 **value** = range (0 - 1024)
 
@@ -54,7 +54,7 @@
 
 ## digitalMultiWrite(pins,val)
 
-**pins**: It is the Bolt GPIO you want to control. It can take multiple no. of following values followed by comma (,)
+**pins**: It is the Bolt GPIO you want to control. It can take multiple no. of following values followed by comma (,) <br>
 **val**: It is the output voltage to be provided on the GPIO. It can take value HIGH(3.3V) or LOW(0V).
 
 **Syntax** - `digitalMultiWrite('0,1,2','HIGH,LOW,HIGH')`
@@ -66,7 +66,7 @@
 
 ## digitalMultiRead(pins,element_id)
 
-**pin**: It is the Bolt GPIO you want to control. It can take multiple no. of following values followed by comma (,)
+**pin**: It is the Bolt GPIO you want to control. It can take multiple no. of following values followed by comma (,) <br>
 **element_id**: It is the ID parameter predefined in the function. We get a return in the ID in the form of innerHTML as **"Pin Val = 'value of pin' "**
 **value** = HIGH/LOW
 
@@ -82,7 +82,7 @@
 
 ## analogMultiWrite(pins,val)
 
-**pins**: It is the Bolt GPIO you want to control. It can take multiple no. of following values followed by comma (,)
+**pins**: It is the Bolt GPIO you want to control. It can take multiple no. of following values followed by comma (,) <br>
 **val**: It is the analog output voltage to be provided on the GPIO. It can take value between 0-255 (PWM).
 **Syntax** - `analogMultiWrite('0,1,2','50,139,240')`
 
@@ -121,7 +121,7 @@
 
 ## serialRead(till,element_id)
 
-**till**: Read the data upto the specified 'till' value from the incoming UART data to Bolt. It takes ASCII value of the character from 0-127.
+**till**: Read the data upto the specified 'till' value from the incoming UART data to Bolt. It takes ASCII value of the character from 0-127. <br>
 element_id: It is the ID parameter predefined in the function. We get a return in the ID in the form of innerHTML as **"Read Val = 'value present in serial monitor' "**
 **
 Syntax** - `serialRead('10','myLight')`
@@ -135,8 +135,8 @@ Syntax** - `serialRead('10','myLight')`
 
 ## serialWR(data,till,element_id)
 
-**data**: dataString where String will be transmitted as ASCII characters
-till: Read the data upto the specified 'till' value from the incoming UART data to Bolt. It takes ASCII value of the character from 0-127.
+**data**: dataString where String will be transmitted as ASCII characters <br>
+till: Read the data upto the specified 'till' value from the incoming UART data to Bolt. It takes ASCII value of the character from 0-127. <br>
 **element_id**: It is the ID parameter predefined in the function. We get a return in the ID in the form of innerHTML as **"Read Val = 'value present in serial monitor' "**
 
 **Syntax** - `serialWR('Hello','10','myLight')`
@@ -154,7 +154,7 @@ till: Read the data upto the specified 'till' value from the incoming UART data 
 
 ## servoWrite(pin,val)
 
-**pin**: It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4.
+**pin**: It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4. <br>
 **val**: It is the degree of servo motor in terms of degree. It can take values between 0-180
 
 **Syntax** - `servoWrite(0,HIGH)`
@@ -166,7 +166,7 @@ till: Read the data upto the specified 'till' value from the incoming UART data 
 
 ## servoRead(pin,element_id)
 
-**pin**: It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4.
+**pin**: It is the Bolt GPIO you want to control. It can take any of the following values 0, 1, 2, 3, 4. <br>
 **element_id**: It is the ID parameter predefined in the function. We get a return in the ID in the form of innerHTML as **"Pin Val = 'value of pin' "**
 **value** = HIGH/LOW
 
@@ -184,7 +184,7 @@ till: Read the data upto the specified 'till' value from the incoming UART data 
 
 ## setKey(key,dev_name)
 
-**key**: This is your API key
+**key**: This is your API key <br>
 **dev_name**: This is your DEVICE_ID
 
 **Syntax** - `setKey('XXXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX','BOLTXXXXXXX')`
