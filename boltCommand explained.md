@@ -8,7 +8,7 @@
 **Syntax** - `digitalWrite(0,HIGH)`
 
 **Sample** - 
-```
+```html
  <button onclick="digitalWrite(0, HIGH);" > ON </button>
 ```
 
@@ -21,7 +21,7 @@
 **Syntax** - `digitalRead(0,'myLight')`
 
 **Sample** -
-```
+```html
 <button onclick="digitalRead(0,'myLight');" > Check Pin Value</button>
 <br>
 <div id = 'myLight'> </div>
@@ -33,7 +33,7 @@
 **val**: It is the analog output voltage to be provided on the GPIO. It can take value between 0-255 (PWM).
 
 **Syntax** - `analoglWrite(0,150)`
-```
+```html
  <button onclick="digitalWrite(0, 150);" > Pin Valye </button>
 ```
 
@@ -46,7 +46,7 @@
 **Syntax** - `analogRead(A0,'myLight')`
 
 **Sample** -
-```
+```html
 <button onclick="analogRead(A0,'myLight');" > Check Pin Value </button>
 <br>
 <div id = 'myLight'> </div>
@@ -60,7 +60,7 @@
 **Syntax** - `digitalMultiWrite('0,1,2','HIGH,LOW,HIGH')`
 
 **Sample** - 
-```
+```html
  <button onclick="digitalMultiWrite('0,1,2','HIGH,LOW,HIGH');" > ON </button>
 ```
 
@@ -73,7 +73,7 @@
 **Syntax** - `digitalMultiRead('0,1,2,3','myLight')`
 
 **Sample** -
-```
+```html
 <button onclick="digitalMultiRead('0,1,2,3','myLight');" > Check PIN Values </button>
 <br>
 <div id = 'myLight'> </div>
@@ -87,7 +87,7 @@
 **Syntax** - `analogMultiWrite('0,1,2','50,139,240')`
 
 **Sample** - 
-```
+```html
  <button onclick="analogMultiWrite('0,1,2','50,139,240');" > ON </button>
 ```
 
@@ -104,7 +104,7 @@
 **Syntax** - `serialBegin(9600)`
 
 **Sample** - 
-```
+```html
  <button onclick="serialBegin(9600);" > Start Serial Communication with 9600 baudrate </button>
 ```
 
@@ -115,7 +115,7 @@
 **Syntax** - `serialWrite(Hello)`
 
 **Sample** - 
-```
+```html
  <button onclick="serialWrite(Hello);" > Write 'Hello' on the Serial Monitor  </button>
 ```
 
@@ -127,7 +127,7 @@ element_id: It is the ID parameter predefined in the function. We get a return i
 Syntax** - `serialRead('10','myLight')`
 
 **Sample** -
-```
+```html
 <button onclick="serialRead('10','myLight');" > Read the Line till 'next line' is present  </button> // 10 is the ASCII character for '\n'
 <br>
 <div id = 'myLight'> </div>
@@ -142,7 +142,7 @@ till: Read the data upto the specified 'till' value from the incoming UART data 
 **Syntax** - `serialWR('Hello','10','myLight')`
 
 **Sample** -
-```
+```html
 <button onclick="serialWR('Hello','10','myLight');" > Write Hello and then Read the Line till 'next line' is present  </button>
 <br>
 <div id = 'myLight'> </div>
@@ -160,7 +160,7 @@ till: Read the data upto the specified 'till' value from the incoming UART data 
 **Syntax** - `servoWrite(0,HIGH)`
 
 **Sample** - 
-```
+```html
  <button onclick="servoWrite(0, 60);" > Turn Servo Motor 60 degree </button>
 ```
 
@@ -173,7 +173,7 @@ till: Read the data upto the specified 'till' value from the incoming UART data 
 **Syntax** - `servoRead(0,'myLight')`
 
 **Sample** -
-```
+```html
 <button onclick="servoRead(0,'myLight');" > Check Servo Value </button>
 <br>
 <div id = 'myLight'> </div>
